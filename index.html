@@ -40,6 +40,8 @@
 			border-color: black;
 			background-color: #FC7300;
 			font-size: 1.7rem;
+			text-decoration: none;
+			color: black;
 		}
 
 		.section_3 {
@@ -52,10 +54,17 @@
 			border-color: black;
 			background-color: #08ADF8;
 			font-size: 1.7rem;
-			padding: 0.5rem 2rem;
-			width: 25rem;
+			width: 10rem;
+			text-decoration: none;
+			color: black;
+			padding: 1rem 2.5rem;
 		}
 
+		.search_button_text {
+			width: 100%;
+			text-align: center;
+
+		}
 	</style>
 
 </head>
@@ -67,10 +76,10 @@
 	</div>
 	<div class="section_2">
 		<input type="text" id="search_input" placeholder="Patient Name...">
-		<button class="search_button" type="button">Search</button>
+		<a href="results.html" class="search_button"><p class="search_button_text">Search</p></a>
 	</div>
 	<div class="section_3">
-		<button class="form_button" type="button">Thromboembolism Risk Assessment Form</button>
+		<a href="form.html" class="form_button">Thromboembolism Risk Assessment Form</a>
 	</div>
 
 </body>
