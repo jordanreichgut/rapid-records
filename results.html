@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="author" content="RAJE">
+		<meta name="keywords" content="Carnegie Mellon University, Information Systems, 67-476, Rapid Records">
+		<meta name="description" content="Rapid Records">
+
+		<style>
+			h3 {
+				text-align: center;
+			}
+
+			a.button {
+				background-color: orange;
+				border: 1px solid black;
+			    border-radius: 2px;
+			    color: black;
+			    padding: 15px 32px;
+			    text-align: center;
+			    text-decoration: none;
+			    display: inline-block;
+			    font-size: 16px;
+			    cursor: pointer;
+			}
+
+			a.button span {
+  				cursor: pointer;
+  				display: inline-block;
+  				position: relative;
+  				transition: 0.5s;
+			}
+
+			.button span:after {
+  				content: '\00bb';
+ 				position: absolute;
+  				opacity: 0;
+  				top: 0;
+  				right: -10px;
+  				transition: 0.4s;
+			}
+
+			.button:hover span {
+  				padding-right: 25px;
+			}
+
+			.button:hover span:after {
+  				opacity: 1;
+  				right: 0;
+			}
+
+			table {
+				width: 100%;
+				border: 1px solid black;
+			}
+
+			th {
+				border: 1px solid black;
+				background-color: aqua;
+			}
+
+			tr {
+				text-align: center;
+			}
+
+		</style>
+	</head>
+
+	<div id="top_row">
+		<nav>
+			<img src="images/rapid_records_logo.jpeg">
+			<a href="home.html"><img src="images/home.jpeg"></a>
+	    </nav>
+	</div><br/>
+
+	<div id="patients">
+		<table>
+		   	<thead>
+		   		<tr>
+		   			<th colspan="7">Patients</th>
+		   		</tr>
+		    	<tr>
+			    	<th>Name</th>
+				    <th>ID</th>
+				    <th>Age</th>
+				    <th>Height</th>
+				    <th>Weight</th>
+				    <th>Eye Color</th>
+				    <th>Race</th>
+			 	</tr>
+		    </thead>
+
+		    <tbody>
+		    	<tr>
+		    		<td>John Smith</td>
+		    		<td>12</td>
+		    		<td>48</td>
+		    		<td>6'8"</td>
+		    		<td>192 lbs</td>
+		    		<td>Brown</td>
+		    		<td>Mixed Race</td>
+		    	</tr>
+		    	<tr>
+		    		<td>John Smith</td>
+		    		<td>15</td>
+		    		<td>13</td>
+		    		<td>4'8"</td>
+		    		<td>112 lbs</td>
+		    		<td>Brown</td>
+		    		<td>Asian</td>
+		    	</tr>
+		    	<tr>
+		    		<td>John Smith</td>
+		    		<td>16</td>
+		    		<td>69</td>
+		    		<td>5'9"</td>
+		    		<td>213 lbs</td>
+		    		<td>Blue</td>
+		    		<td>White</td>
+		    	</tr>
+		    	<tr>
+		    		<td>John Smith</td>
+		    		<td>20</td>
+		    		<td>69</td>
+		    		<td>5'9"</td>
+		    		<td>201 lbs</td>
+		    		<td>Green</td>
+		    		<td>Latino</td>
+		    	</tr>
+		    	<tr>
+		    		<td>John Smith</td>
+		    		<td>35</td>
+		    		<td>24</td>
+		    		<td>6'2"</td>
+		    		<td>166 lbs</td>
+		    		<td>-</td>
+		    		<td>White</td>
+		    	</tr>
+		    </tbody>
+	  </table>
+	</div><br/>
+
+	<div id="content" style="text-align: center">
+		<h3><strong>Couldn't find your patient?<br/>Fill out the Risk Assessment Form by clicking the button below:</strong></h3>
+		<a class="button" href="form.html"><span><strong>Thromboembolism Risk Assessment Form</strong></span></a>
+	</div>
+</html>
+
